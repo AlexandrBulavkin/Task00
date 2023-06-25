@@ -6,17 +6,13 @@
 
 Console.WriteLine("Введите цифру, обозначающую день недели: ");
 int dayNumber = Convert.ToInt32(Console.ReadLine());
-
-void dayWeek(int dayNumber)
+if (dayNumber == 6 || dayNumber == 7)
 {
-    if (dayNumber == 6 || dayNumber == 7)
-    {
-        Console.WriteLine("Этот день выходной");
-    }
-    else if (dayNumber < 1 || dayNumber > 7)
-    {
-        Console.WriteLine("Это не день недели, введите от 1 до 7");
-    }
-    else Console.WriteLine("Этот день не выходной");
+    Console.WriteLine("Этот день выходной");
 }
-dayWeek(dayNumber);
+else if (dayNumber <= 5 && dayNumber >= 1)
+{
+    Console.WriteLine("Этот день не выходной");
+}
+else Console.WriteLine("Нет такого дня недели");
+
