@@ -13,6 +13,9 @@ if (dayNumber == 6 || dayNumber == 7)
 else if (dayNumber <= 5 && dayNumber >= 1)
 {
     Console.WriteLine("Этот день не выходной");
-}
-else Console.WriteLine("Нет такого дня недели");
+    }
+else
+{
+    Console.WriteLine("Нет такого дня недели");
+   }
 
