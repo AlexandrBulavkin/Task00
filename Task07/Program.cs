@@ -19,5 +19,5 @@ if (number >= 100 && number <= 999)
 }
 else
 {
-    Console.WriteLine("Введено не трехзначное число");
+    Console.WriteLine("Введено не пятизначное число");
 }
